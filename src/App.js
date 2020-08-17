@@ -27,7 +27,7 @@ class App extends React.Component {
 			if (this.state.squares[line[0]] === s
 				&& this.state.squares[line[1]] === s
 				&& this.state.squares[line[1]] === s) {
-				alert(s + "win");
+				alert(s + " " + "win");
 				setTimeout(() => {
 					this.setState({ squares: Array(9).fill(null) });
 					this.setState({ count: 0 })
@@ -39,7 +39,6 @@ class App extends React.Component {
 	clickHandler = (event) => {
 		let data = event.target.getAttribute('data');
 		let currentSquares = this.state.squares;
-		console.log(currentSquares);
 		if (currentSquares[data] === null) {
 			currentSquares[data] = (this.state.count % 2 === 0) ? 'x' : '0';
 			this.setState({ count: this.state.count + 1 });
