@@ -1,3 +1,6 @@
+Игра крестики нолики. Написана на React.js.
+Tic tac toe. Written in React.js
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
